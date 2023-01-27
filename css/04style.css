@@ -1,0 +1,20 @@
+/* external css (외부 css) : css파일에 스타일 코드 작성 */
+/* css 주석 */
+
+h1 {
+    color:beige;
+    background-color: lightslategray;
+ }
+
+ p {
+    color: red;
+    background-color: darkseagreen;
+ }
+
+h2 {
+    color: blueviolet;
+    background-color: bisque;
+}
+
+/*(h1, p, h2) = selelctor(선택자)*/
+/* color:beige; = declaration(선원) */
