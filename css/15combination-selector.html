@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: chocolate;
+        }
+
+        /* 선택자를 띄워쓰기 없이 연속 작성 */
+        /* 모든 조건을 만족하는 요소 선택 */
+        p.note {
+            background-color: yellowgreen;
+        }
+
+        p.error {
+            text-decoration: line-through;
+        }
+        
+        p.error.note {
+            border: 2px solid black;
+        }
+        
+        .note.error {
+            border: 10px dotted black;
+        }
+        
+        h1.note.error {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.note*3>lorem^p.note.error*3>lorem -->
+    <h1 class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste explicabo cupiditate delectus libero laudantium minus totam velit nemo rem quam nihil obcaecati, neque illo ducimus autem, enim, error dolorem dolore.</h1>
+    <h1 class="note">Neque repudiandae nobis sunt voluptate dolorem saepe, error ipsa officiis eos modi tempora delectus, mollitia animi similique fugiat cum. Facere amet quas incidunt molestiae pariatur quam necessitatibus alias quo deleniti!</h1>
+    <h1 class="note error">Veritatis optio ea officia? Id atque deleniti possimus pariatur. Aperiam nobis mollitia non earum delectus voluptate aspernatur error ipsum rerum? Expedita velit blanditiis sed porro quod molestias ipsa asperiores praesentium?</h1>
+    <p class="note">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas perspiciatis ab at consequuntur unde eius libero. Officiis vitae quos eius hic, sint optio dolorum beatae cum enim, ad similique quam!</p>
+    <p class="note error">Deserunt eveniet sint velit repudiandae neque ratione voluptatem quaerat hic esse dignissimos a, nisi debitis alias delectus ipsam commodi inventore necessitatibus, omnis dolore error, molestiae minus ullam? Atque, nesciunt odit.</p>
+    <p class="note error">Eaque repellendus laudantium sit rem eum repudiandae consectetur quas pariatur necessitatibus architecto consequatur veniam error reprehenderit dolorum illo adipisci quaerat quia ipsam saepe atque ipsum, illum numquam! Deserunt, illo perferendis!</p>
+
+</body>
+</html>
