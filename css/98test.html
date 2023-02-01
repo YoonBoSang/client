@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .mg-right{
+            margin-right: auto;
+        }
+
+        body {
+            background-color: rgb(245, 243, 236);
+        }
+        
+        .flexbox {
+            display: flex;
+        }
+
+        .top-menu-item {
+            text-align: right;
+            margin-right: 10px;
+            font-size: 75%;
+        }
+
+        h2.top-menu-name {
+            margin-bottom: 5px;
+        }
+
+        #top-menu-name {
+            font-size: 21px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        #top-menu-url {
+            font-size: 79%;
+            opacity: 0.2;
+        }
+
+        .second-menu {
+            background-color: rgb(170, 197, 116);
+            border: 15px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- .top-menu.flexbox>.top-menu-item.mg-right>{}^.top-menu-item*7>{} -->
+    <div class="top-menu flexbox">
+        <div class="top-menu-name mg-right" id="name" style="margin-left: 8px">
+            <div id="top-menu-name">중앙정보 취업역량개발센터 취업정보 공유카페</div>
+            <br>
+            <div id="top-menu-url">https://cafe.daum.net/choonganginfojobcafe</div>
+        </div>
+        <div class="top-menu-item bd-right">
+            Daum
+        </div>
+        <div class="top-menu-item bd-right">
+            카페
+        </div>
+        <div class="top-menu-item bd-right">
+            메일
+        </div>
+        <div class="top-menu-item bd-right">
+            자주가는 카페 <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="top-menu-item">
+            바로가기 <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="top-menu-item">
+            로그아웃
+        </div>
+        <div class="top-menu-item">
+            카페앱 설치
+        </div>
+    </div>
+    <!-- .second-menu.flexbox>.second-menu-item*3>{}^.second-menu-item.mg-right>{}^.second-menu-item>{} -->
+    <div class="second-menu flexbox">
+        <div class="second-menu-item" style="margin-left: 8px;">
+            최신글 보기
+        </div>
+        <div class="second-menu-item">
+            인기글 보기
+        </div>
+        <div class="second-menu-item">
+            이미지 보기
+        </div>
+        <div class="second-menu-item mg-right">
+            동영상 보기
+        </div>
+        <div class="second-menu-item">
+            <input type="text">
+        </div>
+    </div>
+    <!-- .container.flexbox>.side-menu>.side-menu-item*41>{}^^main-content>main-content-item*60>{}  -->
+</body>
+</html>
