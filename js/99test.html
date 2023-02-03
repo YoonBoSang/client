@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .br-line {
+            border-right: 1px;
+        }
+
+        .form-check-input {
+            width: 44px !important;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        .nav-item {
+            font-size: 15px;
+        }
+
+        .item-center {
+            align-items: center;
+        }
+
+        .flexbox {
+            display: flex;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .ad2-img {
+            height: 380px;
+            width: 101px;
+        }
+
+        .ad1-box {
+            width: 180px;
+        }
+
+        .ad2-box {
+            width: 180px;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .container {
+            overflow: visible;
+        }
+
+        body {
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary item-center" style="border-bottom: 1px solid rgba(0, 0, 0, 0.3);">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="okky-munchkin-logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Q&A</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">지식</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">커뮤니티</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">이벤트</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">JOBS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">공지사항</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search" style="position: relative;">
+                            <input class="form-control me-2" style="padding-left: 30px; border-radius: 150px; height: 35px;" type="search" placeholder="검색" aria-label="검색">
+                            <button class="btn btn-link" type="submit" style="position: absolute;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        </div>
+                        <button class="btn btn-outline-secondary" style="--bs-btn-font-size: .75rem; margin-right: 10px; border-radius: 150px; width: 85px; height: 35px; border-color: rgba(0, 0, 0, 0.3);">로그인</button>
+                        <button class="btn btn-outline-secondary" style="border-color: white; color: white; --bs-btn-font-size: .75rem; border-radius: 150px; width: 85px; height: 35px; background-color: rgba(39, 165, 255, 0.901);">회원가입</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container flexbox">
+        <div class="ad1-box" style="width: 180px;">
+            <img src="억울광고.png" alt="">
+            <img src="넓은번호광고.png" alt="">
+        </div>
+        <div class="main-content">
+            <img src="인재모집.jpg" alt="">
+        </div>
+        <div class="ad2-box" style="width: 180px;">
+            <img src="긴번호광고.png" alt="" class="ad2-img">
+            <img src="백준광고.png" alt="" class="ad2-img">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js" integrity="sha512-Sct/LCTfkoqr7upmX9VZKEzXuRk5YulFoDTunGapYJdlCwA+Rl4RhgcPCLf7awTNLmIVrszTPNUFu4MSesep5Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        var toggleBtn = document.getElementById('toggle-btn');
+        toggleBtn.onclick = function () {
+            this.classList.toggle('toggle-btn--dark');
+            document.body.classList.toggle('dark-mode');
+        };
+    </script>
+</body>
+
+</html>
