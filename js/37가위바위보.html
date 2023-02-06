@@ -13,9 +13,12 @@
     <button onclick="rps(0)">✌</button>
     <button onclick="rps(1)">✊</button>
     <button onclick="rps(2)">🖐</button>
+    <div>
+        컴퓨터 : <span id="com"></span>
+    </div>
 
     <h1 id="result"></h1>
-
+    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js" integrity="sha512-Sct/LCTfkoqr7upmX9VZKEzXuRk5YulFoDTunGapYJdlCwA+Rl4RhgcPCLf7awTNLmIVrszTPNUFu4MSesep5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
     // 가위:0, 바위:1, 보:2
@@ -26,6 +29,14 @@
 
         console.log("com", com);
         console.log("user", user);
+
+        if (com === 0) {
+            document.querySelector("#com").textContent = "✌";
+        } else if (com === 1) {
+            document.querySelector("#com").textContent = "✊";
+        } else {
+            document.querySelector("#com").textContent = "🖐";
+        }
 
         let message =""
         if (user === com) {
