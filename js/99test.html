@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        body {
+            overflow: hidden;
+        }
+
         .br-line {
             border-right: 1px;
         }
@@ -56,7 +60,9 @@
 
         }
 
-        .lg\:space-x-10>:not([hidden])~:not([hidden]) {
+        .hidden {
+
+            /* lg\:space-x-10>:not([hidden])~:not([hidden])  */
             --tw-space-x-reverse: 0;
             margin-right: calc(2.5rem * var(--tw-space-x-reverse));
             margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
@@ -69,12 +75,13 @@
         .main-content-list {
             row-gap: 2.5rem;
             column-gap: 2.5rem;
+            flex-direction: row;
         }
 
         .main-content-list-name {
-            flex : 1;
+            flex: 1;
             --tw-bg-opacity: 1;
-            background-color :rgba(234, 240, 243, var(--tw-bg-opacity));
+            background-color: rgba(234, 240, 243, var(--tw-bg-opacity));
             border-radius: 0.75rem;
             font-size: 1.125rem;
             line-height: 1.75rem;
@@ -90,20 +97,51 @@
             position: relative;
         }
 
-        .img-height {
-            height: 72px;
-            width: 116px;
+        #ih1 {
+            height: 105px;
+            width: 160px;
+            top: -20px;
             right: 0;
-            margin-right: 2.5rem;
+            margin-right: 1.2rem;
+
+        }
+
+        #ih2 {
+            height: 100px;
+            width: 120px;
+            top: -20px;
+            right: 0;
+            margin-right: 2rem;
+
         }
 
         .absolute {
             position: absolute;
         }
-        
+
         #main {
             height: 140px;
             width: 100%;
+        }
+
+        .list-name {
+            margin-top: 20px;
+        }
+
+        .main-content-box {
+            width: 100%;
+            height: 100px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile {
+            border-radius: 9999px;
+            width: 23px;
         }
     </style>
 </head>
@@ -159,18 +197,36 @@
             <img src="억울광고.png" alt="">
             <img src="넓은번호광고.png" alt="">
         </div>
-        <div class="main-content ">
+        <div class="main-content hidden">
             <img src="인재모집.jpg" alt="" id="main">
+            <!-- <div class="main-content-box"> -->
             <div class="main-content-list flexbox">
                 <div class="main-content-list-name relative">
-                    <img src="questions.svg" alt="" class="img-height absolute">
+                    <div class="list-name">Q&A</div>
+                    <img src="questions.svg" alt="" class="absolute" id="ih1">
+                    <br>
+                    <ul class="main-content-item">
+                        <li><img class="profile" src="img_profile.png" alt=""></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
+                <!-- </div> -->
+                <!-- <div class="main-content-box"> -->
+
                 <div class="main-content-list-name relative">
-                    <img src="community.svg" alt="" class="img-height absolute">
+                    <div class="list-name">
+                        커뮤니티
+                    </div>
+                    <img src="community.svg" alt="" class="absolute" id="ih2">
                 </div>
+                <div class="main-content-item"></div>
+                <!-- </div> -->
             </div>
         </div>
-        <div class="ad2-box" style="width: 180px;">
+        <div class="ad2-box hidden" style="width: 180px;">
             <img src="긴번호광고.png" alt="" class="ad2-img">
             <img src="백준광고.png" alt="" class="ad2-img">
         </div>
