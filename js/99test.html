@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
-            overflow: hidden;
+            overflow: visible;
         }
 
         .br-line {
@@ -168,15 +168,13 @@
             font-size: 12px;
             font-weight: 100;
             text-align: start;
+
         }
 
-        .mb10 {
-            margin-bottom: 10px;
+        .mb5 {
+            margin-bottom: 5px;
         }
 
-        #nick {
-            margin-left: 25px;
-        }
         .main-content-box {
             width: 100%;
         }
@@ -189,7 +187,29 @@
             margin-left: 8px;
         }
 
+        .tj {
+            text-justify: inter-word;
+        }
+
+        .nowrap {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            height: 15px;
+        }
+
+        .name-box {
+            top: 450px;
+        }
+
+        .name-box2 {
+            top: 900px;
+        }
         
+        .navbar {
+            background-color: white;
+        }
+
     </style>
 </head>
 
@@ -247,65 +267,90 @@
         <div class="main-content hidden">
             <img src="인재모집.jpg" alt="" id="main">
             <div class="main-content-list flexbox">
-                <div class="main-content-list-name relative mb10">
+                <div class="main-content-list-name relative mb5">
                     <div class="list-name">Q&A</div>
                     <img src="questions.svg" alt="" class="absolute" id="ih1">
                     <br>
                     <ul class="main-content-box absolute QA">
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox main-content-item mb10">
-                                <div class="flexbox mg-right relative">
-                                    <img class="profile absolute" src="img_profile.png" alt=""><div #nick>닉네임</div> · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
                                     <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git</div>
                         </li>
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox">
-                                <div class="flexbox mg-right">
-                                    <img class="profile" src="img_profile.png" alt="">닉네임 · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-arrows-up-down">21</i><i class="fa-regular fa-comment-dots"></i>21
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git</div>
                         </li>
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox">
-                                <div class="flexbox mg-right">
-                                    <img class="profile" src="img_profile.png" alt="">닉네임 · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-arrows-up-down">21</i><i class="fa-regular fa-comment-dots"></i>21
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git</div>
                         </li>
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox">
-                                <div class="flexbox mg-right">
-                                    <img class="profile" src="img_profile.png" alt="">닉네임 · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-arrows-up-down">21</i><i class="fa-regular fa-comment-dots"></i>21
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
                         </li>
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox">
-                                <div class="flexbox mg-right">
-                                    <img class="profile" src="img_profile.png" alt="">닉네임 · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-arrows-up-down">21</i><i class="fa-regular fa-comment-dots"></i>21
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
                         </li>
                     </ul>
                 </div>
@@ -318,65 +363,454 @@
                     <br>
                     <ul class="main-content-box absolute QA">
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox">
-                                <div class="flexbox mg-right">
-                                    <img class="profile" src="img_profile.png" alt="">닉네임 · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-arrows-up-down">21</i><i class="fa-regular fa-comment-dots"></i>21
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
                         </li>
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox">
-                                <div class="flexbox mg-right">
-                                    <img class="profile" src="img_profile.png" alt="">닉네임 · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-arrows-up-down">21</i><i class="fa-regular fa-comment-dots"></i>21
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
                         </li>
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox">
-                                <div class="flexbox mg-right">
-                                    <img class="profile" src="img_profile.png" alt="">닉네임 · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-arrows-up-down">21</i><i class="fa-regular fa-comment-dots"></i>21
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
                         </li>
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox">
-                                <div class="flexbox mg-right">
-                                    <img class="profile" src="img_profile.png" alt="">닉네임 · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-arrows-up-down">21</i><i class="fa-regular fa-comment-dots"></i>21
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
                         </li>
                         <li class="ul-font bd-bottom">
-                            <div class="flexbox">
-                                <div class="flexbox mg-right">
-                                    <img class="profile" src="img_profile.png" alt="">닉네임 · <i class="fa-solid fa-bolt"></i>288 · <div>3분 전</div>
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
                                 </div>
                                 <div>
-                                    <i class="fa-solid fa-arrows-up-down">21</i><i class="fa-regular fa-comment-dots"></i>21
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
                                 </div>
                             </div>
-                            <div>이클립스 git 연동방법</div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-content-item"></div>
+                <!-- </div> -->
+            </div>
+            <div class="main-content-list flexbox">
+                <div class="main-content-list-name relative mb5 name-box">
+                    <div class="list-name">WEEKLY BEST</div>
+                    <img src="questions.svg" alt="" class="absolute" id="ih1">
+                    <br>
+                    <ul class="main-content-box absolute QA ">
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-content-list-name relative name-box">
+                    <div class="list-name">
+                        EDITOR'S CHOICE
+                    </div>
+                    <img src="community.svg" alt="" class="absolute" id="ih2">
+                    <br>
+                    <ul class="main-content-box absolute QA">
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
                         </li>
                     </ul>
                 </div>
                 <div class="main-content-item"></div>
                 <!-- </div> -->
             </div>
+            <div class="main-content-list flexbox">
+                <div class="main-content-list-name relative mb5 name-box2">
+                    <div class="list-name">WEEKLY BEST</div>
+                    <img src="questions.svg" alt="" class="absolute" id="ih1">
+                    <br>
+                    <ul class="main-content-box absolute QA ">
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-content-list-name relative name-box2">
+                    <div class="list-name">
+                        EDITOR'S CHOICE
+                    </div>
+                    <img src="community.svg" alt="" class="absolute" id="ih2">
+                    <br>
+                    <ul class="main-content-box absolute QA">
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                        <li class="ul-font bd-bottom">
+                            <div class="flexbox main-content-item mb5">
+                                <div class="flexbox mg-right relative tj ">
+                                    <img class="profile relative" src="img_profile.png" alt="">
+                                    <div>닉네임</div>
+                                    <div>·</div> <i class="fa-solid fa-bolt"></i>
+                                    <div>288</div>
+                                    <div>·</div>
+                                    <div>3분 전</div>
+                                </div>
+                                <div>
+                                    <i class="fa-solid fa-arrows-up-down mr4"></i>21<i class="fa-regular fa-comment-dots mr4 ml8"></i>25
+                                </div>
+                            </div>
+                            <div class="nowrap">이클립스 git 연동방법</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-content-item"></div>
+                <!-- </div> -->
+            </div>
+
         </div>
         <div class="ad2-box hidden" style="width: 180px;">
             <img src="긴번호광고.png" alt="" class="ad2-img">
