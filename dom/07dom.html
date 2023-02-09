@@ -9,21 +9,23 @@
     </style>
 </head>
 <body>
-
+    <h1>
+        Lorem.
+    </h1>
+    <h1>
+        Quisquam.
+    </h1>
+    <div id="res"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js" integrity="sha512-Sct/LCTfkoqr7upmX9VZKEzXuRk5YulFoDTunGapYJdlCwA+Rl4RhgcPCLf7awTNLmIVrszTPNUFu4MSesep5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //값으로 반환 가능
-    function a() {
-        function b() {
-            console.log("비 함수 실행.....")
-        }
+    let heads = document.querySelectorAll("h1");
+    let text = "";
 
-        return b;
+    for (let i = 0; i < heads.length; i++) {
+        text += heads[i].textContent;
     }
 
-    
-    let c = a();
-    c();
+    document.getElementById("res").textContent = text;
     
     </script>
 </body>

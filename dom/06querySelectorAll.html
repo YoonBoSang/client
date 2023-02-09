@@ -9,21 +9,34 @@
     </style>
 </head>
 <body>
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2" class="note">
+        Ducimus.
+    </h1>
+    <h1 id="head3" class="note">
+        Repudiandae.
+    </h1>
+    <h1 id="head4">
+        Quod.
+    </h1>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js" integrity="sha512-Sct/LCTfkoqr7upmX9VZKEzXuRk5YulFoDTunGapYJdlCwA+Rl4RhgcPCLf7awTNLmIVrszTPNUFu4MSesep5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //값으로 반환 가능
-    function a() {
-        function b() {
-            console.log("비 함수 실행.....")
-        }
+    let heads = document.querySelectorAll("h1")
 
-        return b;
+    for (let i = 0; i < heads.length; i++){
+        console.log(heads[i].textContent);
     }
 
-    
-    let c = a();
-    c();
+    // note 클래스인 요소의 객체를 dom에서 가져와서
+    // 요소들의 textContent를 출력하기
+    // querySelectorAll 메소드 사용해보기
+    let notes = document.querySelectorAll(".note")
+    for (let i = 0; i < notes.length; i++) {
+        console.log(notes[i].textContent);
+    }
     
     </script>
 </body>
